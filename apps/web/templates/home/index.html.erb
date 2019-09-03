@@ -1,0 +1,14 @@
+<h1>Find the weather</h1>
+
+<%=
+  form_for :weather, '/weather' do
+    div class: 'input' do
+      label      :location
+      text_field :location
+    end
+
+    div class: 'controls' do
+      submit 'Search'
+    end
+  end
+%>
